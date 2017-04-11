@@ -1,0 +1,711 @@
+{
+  "luis_schema_version": "2.0.0",
+  "versionId": "0.1",
+  "name": "KeijiLUIS1",
+  "desc": "Bot Framework から使いたい",
+  "culture": "ja-jp",
+  "intents": [
+    {
+      "name": "Debug"
+    },
+    {
+      "name": "GetMyAcvitities"
+    },
+    {
+      "name": "GetMyOpportunities"
+    },
+    {
+      "name": "GetMyTodayAccounts"
+    },
+    {
+      "name": "GetMyTodayActivities"
+    },
+    {
+      "name": "GetMyTodayOpportunities"
+    },
+    {
+      "name": "GetNews"
+    },
+    {
+      "name": "Hello"
+    },
+    {
+      "name": "No"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "ReportActivity"
+    },
+    {
+      "name": "SendThisActivityToManager"
+    },
+    {
+      "name": "Yes"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Account"
+    },
+    {
+      "name": "Activity"
+    },
+    {
+      "name": "ActivityReport"
+    },
+    {
+      "name": "Opportunity"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "actions": [],
+  "model_features": [
+    {
+      "name": "今日",
+      "mode": true,
+      "words": "本日,今,これ から",
+      "activated": true
+    }
+  ],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "サポート案件を見せて",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "サポート案件表示して",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "私が担当しているサポート案件の一覧を表示して",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "何か新しいことは？",
+      "intent": "GetNews",
+      "entities": []
+    },
+    {
+      "text": "今日のニュースは？",
+      "intent": "GetNews",
+      "entities": []
+    },
+    {
+      "text": "案件",
+      "intent": "GetMyOpportunities",
+      "entities": [
+        {
+          "entity": "Opportunity",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "案件の一覧",
+      "intent": "GetMyOpportunities",
+      "entities": [
+        {
+          "entity": "Opportunity",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "私の案件",
+      "intent": "GetMyOpportunities",
+      "entities": [
+        {
+          "entity": "Opportunity",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "営業案件の一覧",
+      "intent": "GetMyOpportunities",
+      "entities": [
+        {
+          "entity": "Opportunity",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "営業案件",
+      "intent": "GetMyOpportunities",
+      "entities": [
+        {
+          "entity": "Opportunity",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "私の営業案件",
+      "intent": "GetMyOpportunities",
+      "entities": [
+        {
+          "entity": "Opportunity",
+          "startPos": 2,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "活動",
+      "intent": "GetMyAcvitities",
+      "entities": [
+        {
+          "entity": "Activity",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "活動の一覧",
+      "intent": "GetMyAcvitities",
+      "entities": [
+        {
+          "entity": "Activity",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "私の訪問",
+      "intent": "GetMyAcvitities",
+      "entities": [
+        {
+          "entity": "Activity",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "訪問の一覧",
+      "intent": "GetMyAcvitities",
+      "entities": [
+        {
+          "entity": "Activity",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "訪問",
+      "intent": "GetMyAcvitities",
+      "entities": [
+        {
+          "entity": "Activity",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "私の活動の一覧",
+      "intent": "GetMyAcvitities",
+      "entities": [
+        {
+          "entity": "Activity",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "私の活動",
+      "intent": "GetMyAcvitities",
+      "entities": [
+        {
+          "entity": "Activity",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "今日の案件",
+      "intent": "GetMyTodayOpportunities",
+      "entities": [
+        {
+          "entity": "Opportunity",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "今日の営業案件",
+      "intent": "GetMyTodayOpportunities",
+      "entities": [
+        {
+          "entity": "Opportunity",
+          "startPos": 3,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "今日の営業案件の一覧",
+      "intent": "GetMyTodayOpportunities",
+      "entities": [
+        {
+          "entity": "Opportunity",
+          "startPos": 3,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "今日の案件の一覧",
+      "intent": "GetMyTodayOpportunities",
+      "entities": [
+        {
+          "entity": "Opportunity",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "今日のお客様",
+      "intent": "GetMyTodayAccounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "今日の取引先企業",
+      "intent": "GetMyTodayAccounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 3,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "今日の顧客",
+      "intent": "GetMyTodayAccounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "今日の企業",
+      "intent": "GetMyTodayAccounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "今日の訪問先",
+      "intent": "GetMyTodayAccounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "今日訪問するお客様の一覧",
+      "intent": "GetMyTodayAccounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 6,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "今日訪問するお客様",
+      "intent": "GetMyTodayAccounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 6,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "今日のお客様情報",
+      "intent": "GetMyTodayAccounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "これから行くお客様",
+      "intent": "GetMyTodayAccounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 6,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "今日のお客様の一覧を見せて",
+      "intent": "GetMyTodayAccounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "今日訪問するお客様の一覧を見せて",
+      "intent": "GetMyTodayAccounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 6,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "今日のお客様を教えて",
+      "intent": "GetMyTodayAccounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "今日のお客様を表示",
+      "intent": "GetMyTodayAccounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "今日のお客様を見せて",
+      "intent": "GetMyTodayAccounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "今日訪問する企業",
+      "intent": "GetMyTodayAccounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "今日の訪問の一覧",
+      "intent": "GetMyTodayActivities",
+      "entities": [
+        {
+          "entity": "Activity",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "今日の活動の一覧",
+      "intent": "GetMyTodayActivities",
+      "entities": [
+        {
+          "entity": "Activity",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "今日の訪問",
+      "intent": "GetMyTodayActivities",
+      "entities": [
+        {
+          "entity": "Activity",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "今日の活動",
+      "intent": "GetMyTodayActivities",
+      "entities": [
+        {
+          "entity": "Activity",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "今日の訪問予定は？",
+      "intent": "GetMyTodayActivities",
+      "entities": [
+        {
+          "entity": "Activity",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "今日の活動予定は？",
+      "intent": "GetMyTodayActivities",
+      "entities": [
+        {
+          "entity": "Activity",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "今日の私の訪問を表示して",
+      "intent": "GetMyTodayActivities",
+      "entities": [
+        {
+          "entity": "Activity",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "私が今日行く先を表示して",
+      "intent": "GetMyTodayActivities",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "こんばんは",
+      "intent": "Hello",
+      "entities": []
+    },
+    {
+      "text": "おはようございます",
+      "intent": "Hello",
+      "entities": []
+    },
+    {
+      "text": "お疲れ様です",
+      "intent": "Hello",
+      "entities": []
+    },
+    {
+      "text": "こんにちは",
+      "intent": "Hello",
+      "entities": []
+    },
+    {
+      "text": "これを上司にメールしておいて",
+      "intent": "SendThisActivityToManager",
+      "entities": [
+        {
+          "entity": "Activity",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "上司にこの活動をメールしておいて",
+      "intent": "SendThisActivityToManager",
+      "entities": [
+        {
+          "entity": "Activity",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "この活動を上司にメール送信しておいて",
+      "intent": "SendThisActivityToManager",
+      "entities": [
+        {
+          "entity": "Activity",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "この活動を上司にメールしておいて",
+      "intent": "SendThisActivityToManager",
+      "entities": [
+        {
+          "entity": "Activity",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "訪問メモを残します",
+      "intent": "ReportActivity",
+      "entities": [
+        {
+          "entity": "ActivityReport",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "活動を報告する",
+      "intent": "ReportActivity",
+      "entities": [
+        {
+          "entity": "Activity",
+          "startPos": 0,
+          "endPos": 1
+        },
+        {
+          "entity": "ActivityReport",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "報告します",
+      "intent": "ReportActivity",
+      "entities": [
+        {
+          "entity": "ActivityReport",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "レポートします",
+      "intent": "ReportActivity",
+      "entities": [
+        {
+          "entity": "ActivityReport",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "活動メモを",
+      "intent": "ReportActivity",
+      "entities": [
+        {
+          "entity": "ActivityReport",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "yes",
+      "intent": "Yes",
+      "entities": []
+    },
+    {
+      "text": "はい",
+      "intent": "Yes",
+      "entities": []
+    },
+    {
+      "text": "いいですよ",
+      "intent": "Yes",
+      "entities": []
+    },
+    {
+      "text": "no",
+      "intent": "No",
+      "entities": []
+    },
+    {
+      "text": "いいえ",
+      "intent": "No",
+      "entities": []
+    },
+    {
+      "text": "だめです",
+      "intent": "No",
+      "entities": []
+    },
+    {
+      "text": "デバッグモード",
+      "intent": "Debug",
+      "entities": []
+    },
+    {
+      "text": "デバッグ",
+      "intent": "Debug",
+      "entities": []
+    },
+    {
+      "text": "debug",
+      "intent": "Debug",
+      "entities": []
+    }
+  ]
+}
